@@ -1,0 +1,520 @@
+ body {
+	padding: 0;
+	margin: 0;
+	height:100%;
+	color:ffffff!important;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover{
+	color: #33CCFF;
+	text-decoration: underline;
+}
+
+
+
+
+.clear {
+	clear: both;
+	height: 0px;
+	width: 100%;
+}
+
+
+
+#page-bg {
+    background: url("bg_image.png") no-repeat transparent;
+	width: 100%;
+    height: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	padding:0;
+    background-size:100% 100%;
+	background-position: 50% 50%;
+	background-position:center;
+    position: absolute;
+    z-index: -100;
+
+}
+
+#page-bg img {
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+
+}
+
+
+/* --------------------------------
+HEADER 
+-----------------------------------*/
+#header {
+    float:left;
+    left: 0;
+    margin: 0;
+	padding: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+#logo {
+	float: left;
+	width: 115px;
+	height: 42px;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#logo img {
+	float: left;
+	width: 115px;
+	height: 42px;
+	background: url('stamp.png') no-repeat scroll 0 0 transparent;
+	margin: 30px 0 0 66px;
+	border:0;
+}
+
+/* --------------------------------
+Top Links
+-----------------------------------*/
+#top-links-container {
+	float: left;
+	width: 651px;
+	margin: 43px 0 0 220px;
+	padding: 0 0 0 0 ;
+	position: relative;
+	z-index: 100;
+}
+
+
+
+@font-face {
+  font-family: menuFont;
+  src: url(roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+	color:#FFFFFF;
+	white-space: nowrap;
+	font-size:12px;
+}
+
+#top_links {
+  font-family: menuFont;
+  padding: 0 70px 0 0;
+  margin:0;
+  display:inline;
+  font-size:12px;
+}
+
+
+/* --------------------------------
+MENU
+-----------------------------------*/
+
+.topnav {
+  float: right;
+  overflow: hidden;
+  background-color: #333;
+  width: 35px;
+  height:24px;
+  margin-top:50px;
+  margin-right:76px;
+}
+
+.topnav a {
+
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	float: left;
+	width: 35px;
+	height: 24px;
+	background: url('drop_down_icon.png') no-repeat scroll 0 0 transparent;
+	border:0;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+/* --------------------------------
+PAGE
+-----------------------------------*/
+#page {
+
+	margin-top:140px;
+	height:450px;
+	width:70%;
+	z-index: 100;
+    position: fixed; /* or absolute */
+    left: 14%;
+	color:#ffffff!important;
+
+}
+
+
+#page p {
+	margin:0 0 8px 0;
+	padding:0;
+	line-height:19px;
+}
+
+
+
+/* --------------------------------
+PAGE LEFT
+-----------------------------------*/
+
+#about-left {
+	float:left;
+	width: 40%;
+	margin:13px 90px 0 0;
+
+}
+
+@font-face {
+    font-family: headlineFont;
+    src: url(roboto/Roboto-Bold.ttf);
+	color:#FFFFFF;
+	font-size:50px;
+}
+
+#headline {
+    font-family: headlineFont;
+	padding: 0;
+	margin:0;
+	font-size:50px;
+	color:#FFFFFF;
+	font-size:50px;
+}
+
+@font-face {
+  font-family: textFont;
+  src: url(roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+	color:#FFFFFF;
+
+
+}
+
+#headline_text {
+  font-family: textFont;
+  padding-right: 20px;
+  margin-top:32px;
+  font-size:16px;
+  line-height:24px;
+  color:#FFFFFF;
+}
+
+
+/* --------------------------------
+PAGE RIGHT
+-----------------------------------*/
+#about-right {
+	float:right;
+	width: 40%;
+	margin:0 0 0 0;
+	color:#ffffff!important;
+}
+
+@font-face {
+    font-family: signupFont;
+    src: url(roboto/RobotoCondensed-Light.ttf);
+	color:#FFFFFF;
+	font-size:12px;
+	  text-align: center;
+	  letter-spacing: 4px;
+}
+
+#signup {
+    font-family: signupFont;
+	padding: 0;
+	margin:0 0 24px 0;
+	font-size:12px;
+	letter-spacing: 4px;
+    text-align: center;
+	color:#FFFFFF;
+
+}
+
+/* --------------------------------
+FORM
+-----------------------------------*/
+form {
+	margin: 0;
+	width: 100%;
+	color:#000000!important;
+	border:1px solid #7c7774;
+	border-radius: 4px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  color:#000000;
+  width: 95%;
+  padding: 15px 0 15px 0;
+  margin: 0 0 0 0;
+  display: inline-block;
+  border-bottom:1px solid #827975;
+  border-right:none;
+  border-left:none;
+  border-top:none;
+  border-style: none;
+  border-bottom-width:1px;
+  opacity:0.3;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+ 
+  outline: none;
+}
+
+
+@font-face {
+    font-family: inputFont;
+    src: url(roboto/Roboto-Regular.ttf);
+	color:#000000;
+	font-size:14px;
+	z-index: 300;
+}
+
+#input_font {
+    font-family:inputFont;
+	color:#000000;
+	font-size:14px;
+	z-index: 300;
+	padding-left:5%;
+}
+
+
+
+/* Set a style for all buttons */
+@font-face {
+    font-family: buttonFont;
+    src: url(roboto/Roboto-Regular.ttf);
+	color:#ffffff;
+	font-size:14px;
+	z-index: 300;
+}
+
+#signup_btn  {
+  font-family: buttonFont;
+  color: #ffffff;
+  font-size:14px;
+
+}
+
+button {
+  color: #ffffff;
+  background-color:#2c99ed;
+  padding: 15px 0 15px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+button:hover {
+  opacity:1;
+}
+
+
+@font-face {
+    font-family: termsFont;
+    src: url(roboto/Roboto-Regular.ttf);
+	color:#a1a1a1;
+	font-size:12px;
+	z-index: 300;
+	line-height:22px;
+}
+
+#terms {
+    font-family: termsFont;
+	padding: 0;
+	margin:20px 0 24px 0;
+	font-size:12px;
+    text-align: center;
+	color:#a1a1a1;
+	line-height:22px;
+}
+
+#terms a {
+    font-family: termsFont;
+	padding: 0;
+	margin:20px 0 24px 0;
+	font-size:12px;
+    text-align: center;
+	color:#ffffff;
+	
+}
+
+#terms a:hover{
+	color: #33CCFF;
+	text-decoration: underline;
+}
+
+
+
+/* --------------------------------
+FORM ENDS
+-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------
+FOOTER
+-----------------------------------*/
+
+
+/* --------------------------------
+FOOTER LEFT
+-----------------------------------*/
+#footer{
+   float:left;
+    left: 0;
+    margin: 0;
+	padding: 0 0 20px  0;
+    width: 100%;
+	position:fixed;
+    bottom:0;
+}
+
+@font-face {
+  font-family: rightsFont;
+  src: url(roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+	color:#FFFFFF;
+	white-space: nowrap;
+	font-size:12px;
+}
+
+#rights {
+  font-family: rightsFont;
+  float: left;
+  width: 20%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 66px;
+  display:inline;
+  color:#FFFFFF;
+  font-size:12px;
+}
+
+/* --------------------------------
+Top Links
+-----------------------------------*/
+#bottom-links-container {
+	float: right;
+	right: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0 ;
+	z-index: 100;
+}
+
+
+
+@font-face {
+  font-family: bottomLinksFont;
+  src: url(roboto/RobotoCondensed-Light.ttf);
+  font-size:12px;
+	letter-spacing: 4px;
+    text-align: center;
+	color:#FFFFFF;
+}
+
+#bottom_links {
+float: left;
+  font-family: bottomLinksFont;
+  padding: 0 70px 0 0;
+  margin: 0 0 0 0;
+  display:inline;
+  font-size:12px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+
+
+
+
+
+
+
+
+
